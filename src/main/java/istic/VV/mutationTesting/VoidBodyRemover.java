@@ -35,14 +35,7 @@ public class VoidBodyRemover{
 		if (methods.contains(method)){
 			method.setBody(null);
 		}
-		/*
-		for (CtMethod method1: methods) {
-			if(method1.getName().equals(method)){
-				method1.setBody(null);
-			}*/
-		else {
-				System.out.println("La méthode demandée n'existe pas ou n'est pas du type void");
-			}
+		else {System.out.println("La méthode demandée n'existe pas ou n'est pas du type void");}
 					}
 	}
 	
