@@ -1,8 +1,7 @@
-package test_package;
+package istic.VV.Tested_Classes_package;
 
-public class Dummy_Code_to_Test {
+public class Dummy_Code_to_Test {	
 	
-	/*
 	public int dummy_method(int a, int b) {
 		int j = 0;
 		if (a==b) {
@@ -13,9 +12,8 @@ public class Dummy_Code_to_Test {
 			j++;
 		}
 		return j;			
-	}
-	*/
-	/*
+	}	
+	
 	public int add (int a, int b) {
 		return a+b ;
 	}
@@ -29,16 +27,19 @@ public class Dummy_Code_to_Test {
 		return a/b;			
 		}
 		else return 0;		
-	}
-	*/
+	}	
+	
 	public void print(int a, int b) {
 		System.out.println("Hello"+a+b+"youpi");
 		
-	}
+	}	
+
 	public void testons(int a) {
-		System.out.println("teeeessst");
-	}
-	/*
+		int somme = a + 100;
+		somme = somme/2;
+		System.out.println(somme);
+	}	
+
 	public int tests(int a, int b) {
 		int somme=a*b;
 		int doble=somme*2;
@@ -46,6 +47,5 @@ public class Dummy_Code_to_Test {
 		int divide2 = divide/2;
 		
 		return divide2;
-	}
-	*/	
+	}	
 }
