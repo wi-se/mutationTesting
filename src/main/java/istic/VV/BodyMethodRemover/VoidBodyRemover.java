@@ -1,4 +1,4 @@
-package istic.VV.mutationTesting;
+package istic.VV.BodyMethodRemover;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,12 +1,14 @@
-package istic.VV.mutationTesting;
+package istic.VV.Operator_Modifier;
 
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Operator_Modifier{
+public class General_Operator_Modifier{
 	
-	//return the indexes of the operator To Modify found in the list
+	/*@ param :The method takes the list containing the ByteCode and the operator we want to modify
+	 * return : The list of the indexes of the operator we want To Modify found in the Bytecode list
+	*/
 	public List<Integer> IndexesOpToModify(List <String> operations, String opToModify){
 		
 		List <Integer> indexes = new LinkedList<>();
@@ -19,11 +21,15 @@ public class Operator_Modifier{
 	    return indexes;
 	}		
 	
+	/* @param : The original list containing the bytecode, the original operator to replace, the Index of 
+	 * that operator and the operator that replace it  
+	 * return : The new list containing the MODIFIED Bytecode 
+	 */
 	public List<String> OpModified_by_Index(List <String> operations, int Index, String Op, String OpModifier){
 		
-		//list of the indexes of idiv in operations list
-		List<Integer> Div_Indexes= IndexesOpToModify(operations,Op);
-		if (Div_Indexes.contains(Index)){
+		//list of the indexes of the Operator to change "Op" in operations list
+		List<Integer> Op_Indexes= IndexesOpToModify(operations,Op);
+		if (Op_Indexes.contains(Index)){
 		System.out.println("Bon index de "+Op+" , sera changé en "+ OpModifier);
 		operations.set(Index, OpModifier);
 		}
